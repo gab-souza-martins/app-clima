@@ -39,7 +39,7 @@ body {
    color: white;
    font-weight: bold;
    cursor: pointer;
-   transition: box-shadow 150ms, transform 150ms;
+   transition: box-shadow 100ms, transform 100ms;
 }
 
 .userInput button:hover {
@@ -50,6 +50,8 @@ body {
 
 .userInput button:active {
    background-color: hsl(184, 93%, 12%);
+   box-shadow: hsla(0, 0%, 0%, 0.15) 0px 1px 2px 3px inset;
+   transform: translateY(2px);
 }
 
 #emoji {
