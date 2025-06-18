@@ -4,6 +4,15 @@
    padding: 0;
 }
 
+.userInput,
+.container {
+   display: flex;
+   flex-flow: column wrap;
+   margin: 1rem;
+   gap: 1rem;
+   text-align: center;
+}
+
 #localInput,
 .userInput button {
    font-size: 1rem;
