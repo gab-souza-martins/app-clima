@@ -4,6 +4,10 @@
    padding: 0;
 }
 
+body {
+   background-color: hsl(180, 30%, 85%);
+}
+
 .userInput,
 .container {
    display: flex;
@@ -11,6 +15,10 @@
    margin: 1rem;
    gap: 1rem;
    text-align: center;
+}
+
+.container {
+   background-color: white;
 }
 
 #localInput,
