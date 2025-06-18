@@ -38,6 +38,11 @@ body {
    padding: 0.25em 1em;
    color: white;
    font-weight: bold;
+   cursor: pointer;
+}
+
+.userInput button:hover {
+   background-color: hsl(170, 89%, 18%);
 }
 
 #emoji {
