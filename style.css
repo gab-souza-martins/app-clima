@@ -20,6 +20,13 @@ body {
 
 .container {
    background-color: white;
+   background-image: radial-gradient(
+      circle at 50% 200%,
+      hsl(60, 100%, 50%),
+      hsla(184, 100%, 58%, 0.3)
+   );
+   border: hsl(173, 100%, 95%) 1px solid;
+   border-radius: 2em;
 }
 
 #localInput,
@@ -56,4 +63,5 @@ body {
 
 #emoji {
    font-size: 3.5rem;
+   /* text-shadow: 2px 2px white; */
 }
