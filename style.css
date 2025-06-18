@@ -3,3 +3,12 @@
    margin: 0;
    padding: 0;
 }
+
+.userInput button {
+   background-color: hsl(147, 85%, 31%);
+   border: none;
+   border-radius: 0.75em;
+   padding: 0.25em 1em;
+   color: white;
+   font-weight: bold;
+}
