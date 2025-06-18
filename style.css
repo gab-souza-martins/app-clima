@@ -8,8 +8,7 @@ body {
    background-color: hsl(180, 30%, 85%);
 }
 
-.userInput,
-.container {
+.flex {
    display: flex;
    flex-flow: column wrap;
    margin: 1rem;
