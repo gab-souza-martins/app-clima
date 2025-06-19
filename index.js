@@ -38,6 +38,22 @@ function exibirDados(dados) {
       main: { temp, humidity },
       weather: [{ id }],
    } = dados;
+
+   container.textContent = "";
+   container.style.display = "flex";
+
+   const nomeCidade = document.createElement("h1");
+   const tempCidade = document.createElement("h2");
+   const umidDisplay = document.createElement("h4");
+   const emoji = document.createElement("p");
+
+   nomeCidade.textContent = city;
+   tempCidade.textContent = `${temp}°K`;
+   umidDisplay.textContent = `Umidade: ${humidity}%`;
+
+   container.appendChild(nomeCidade);
+   container.appendChild(tempCidade);
+   container.appendChild(umidDisplay);
 }
 
 function displayError(mensagem) {
