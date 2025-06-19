@@ -71,4 +71,5 @@ body {
 
 .errorDisplay {
    color: hsl(0, 77%, 44%);
+   font-weight: bold;
 }

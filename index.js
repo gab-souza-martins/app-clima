@@ -18,4 +18,8 @@ function displayError(mensagem) {
    const errorDisplay = document.createElement("p");
    errorDisplay.textContent = mensagem;
    errorDisplay.classList.add("errorDisplay");
+   
+   container.textContent = "";
+   container.style.display = "flex";
+   container.appendChild(errorDisplay);
 }
