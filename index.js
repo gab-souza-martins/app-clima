@@ -11,6 +11,7 @@ userInput.addEventListener("submit", async (event) => {
    if (cidade) {
       try {
          const climaDados = await pegarDadosCidade(cidade);
+         exibirDados(climaDados);
       } catch (error) {
          console.error(error);
          displayError(error);
@@ -29,6 +30,10 @@ async function pegarDadosCidade(cidade) {
    }
 
    return await response.json();
+}
+
+function exibirDados(dados){
+    console.log(dados)
 }
 
 function displayError(mensagem) {
