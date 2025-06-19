@@ -11,7 +11,7 @@ body {
 .flex {
    display: flex;
    flex-flow: column wrap;
-   max-width: 20rem;
+   max-width: 16rem;
    margin: 1rem auto;
    padding: 1.5rem;
    gap: 1rem;
