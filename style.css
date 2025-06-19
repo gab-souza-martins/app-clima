@@ -19,6 +19,7 @@ body {
 }
 
 .container {
+   display: none;
    background: radial-gradient(
             circle at 50% 110%,
             hsl(54, 100%, 69%),
