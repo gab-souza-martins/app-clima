@@ -32,8 +32,12 @@ async function pegarDadosCidade(cidade) {
    return await response.json();
 }
 
-function exibirDados(dados){
-    console.log(dados)
+function exibirDados(dados) {
+   const {
+      name: city,
+      main: { temp, humidity },
+      weather: [{ id }],
+   } = dados;
 }
 
 function displayError(mensagem) {
