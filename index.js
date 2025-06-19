@@ -7,4 +7,15 @@ userInput.addEventListener("submit", (event) => {
    event.preventDefault();
 
    const cidade = userInput.value;
+
+   if (cidade) {
+   } else {
+      displayError("Por favor, digite uma cidade");
+   }
 });
+
+function displayError(mensagem) {
+   const errorDisplay = document.createElement("p");
+   errorDisplay.textContent = mensagem;
+   errorDisplay.classList.add("errorDisplay");
+}
