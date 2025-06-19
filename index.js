@@ -3,13 +3,14 @@ const userInput = document.querySelector(".userInput");
 const localInput = document.getElementById("localInput");
 const container = document.querySelector(".container");
 
-userInput.addEventListener("submit", (event) => {
+userInput.addEventListener("submit", async (event) => {
    event.preventDefault();
 
    const cidade = userInput.value;
 
    if (cidade) {
       try {
+         const climaDados = await pegarDadosCidade(cidade);
       } catch (error) {
          console.error(error);
          displayError(error);
@@ -18,6 +19,8 @@ userInput.addEventListener("submit", (event) => {
       displayError("Por favor, digite uma cidade");
    }
 });
+
+async function pegarDadosCidade(cidade) {}
 
 function displayError(mensagem) {
    const errorDisplay = document.createElement("p");
