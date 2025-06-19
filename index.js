@@ -50,10 +50,41 @@ function exibirDados(dados) {
    nomeCidade.textContent = city;
    tempCidade.textContent = `${(temp - 273.15).toFixed(1)}°C`;
    umidDisplay.textContent = `Umidade: ${humidity}%`;
+   emoji.textContent = encontrarEmoji(id);
+   emoji.classList.add("emoji");
 
    container.appendChild(nomeCidade);
    container.appendChild(tempCidade);
    container.appendChild(umidDisplay);
+   container.appendChild(emoji);
+}
+
+function encontrarEmoji(idClima) {
+   switch (true) {
+      case idClima >= 200 && idClima < 300:
+         return "🌩️";
+         break;
+      case idClima >= 300 && idClima < 400:
+         return "🌧️";
+         break;
+      case idClima >= 500 && idClima < 600:
+         return "🌧️";
+         break;
+      case idClima >= 600 && idClima < 700:
+         return "❄️";
+         break;
+      case idClima >= 700 && idClima < 800:
+         return "🌫️";
+         break;
+      case idClima === 800:
+         return "☀️";
+         break;
+      case idClima >= 801 && idClima < 810:
+         return "☁️";
+         break;
+      default:
+         return "❓";
+   }
 }
 
 function displayError(mensagem) {
