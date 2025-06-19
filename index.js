@@ -48,7 +48,7 @@ function exibirDados(dados) {
    const emoji = document.createElement("p");
 
    nomeCidade.textContent = city;
-   tempCidade.textContent = `${temp}°K`;
+   tempCidade.textContent = `${(temp - 273.15).toFixed(1)}°C`;
    umidDisplay.textContent = `Umidade: ${humidity}%`;
 
    container.appendChild(nomeCidade);
