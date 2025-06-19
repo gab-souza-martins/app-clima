@@ -28,7 +28,7 @@ body {
          padding-box,
       linear-gradient(hsl(46, 42%, 82%), hsl(208, 15%, 53%)) border-box;
    border: transparent 1px solid;
-   border-radius: 2em;
+   border-radius: 1em;
 }
 
 #localInput,
