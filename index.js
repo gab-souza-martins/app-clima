@@ -6,7 +6,7 @@ const container = document.querySelector(".container");
 userInput.addEventListener("submit", async (event) => {
    event.preventDefault();
 
-   const cidade = userInput.value;
+   const cidade = localInput.value;
 
    if (cidade) {
       try {
@@ -24,7 +24,11 @@ async function pegarDadosCidade(cidade) {
    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${api}`;
    const response = await fetch(apiUrl);
 
-   console.log(response);
+   if (!response.ok) {
+      throw new Error("Dados não encontrados");
+   }
+
+   return await response.json();
 }
 
 function displayError(mensagem) {
