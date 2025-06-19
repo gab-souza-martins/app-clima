@@ -20,7 +20,12 @@ userInput.addEventListener("submit", async (event) => {
    }
 });
 
-async function pegarDadosCidade(cidade) {}
+async function pegarDadosCidade(cidade) {
+   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${api}`;
+   const response = await fetch(apiUrl);
+
+   console.log(response);
+}
 
 function displayError(mensagem) {
    const errorDisplay = document.createElement("p");
