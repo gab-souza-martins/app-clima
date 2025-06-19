@@ -3,4 +3,8 @@ const userInput = document.querySelector(".userInput");
 const localInput = document.getElementById("localInput");
 const container = document.querySelector(".container");
 
-userInput.addEventListener("submit", (event) => {});
+userInput.addEventListener("submit", (event) => {
+   event.preventDefault();
+
+   const cidade = userInput.value;
+});
