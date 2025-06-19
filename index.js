@@ -9,6 +9,11 @@ userInput.addEventListener("submit", (event) => {
    const cidade = userInput.value;
 
    if (cidade) {
+      try {
+      } catch (error) {
+         console.error(error);
+         displayError(error);
+      }
    } else {
       displayError("Por favor, digite uma cidade");
    }
@@ -18,7 +23,7 @@ function displayError(mensagem) {
    const errorDisplay = document.createElement("p");
    errorDisplay.textContent = mensagem;
    errorDisplay.classList.add("errorDisplay");
-   
+
    container.textContent = "";
    container.style.display = "flex";
    container.appendChild(errorDisplay);
