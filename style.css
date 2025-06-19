@@ -67,3 +67,7 @@ body {
    text-shadow: 2px 0 white, -2px 0 white, 0 2px white, 0 -2px white,
       1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
 }
+
+.errorDisplay {
+   color: hsl(0, 77%, 44%);
+}
